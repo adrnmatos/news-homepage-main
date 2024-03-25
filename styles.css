@@ -35,7 +35,7 @@ main {
 	flex-direction: column;
 	background-color: var(--off-white);
 	padding: 50px;
-	max-width: 80vw;
+	max-width: 1500px;
 }
 
 nav {
@@ -64,7 +64,7 @@ nav > ul > li {
 	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: 40% 1fr 20%;
 	gap: 10px;
-	max-width: 900px;
+	/* max-width: 900px; */
 }
 
 .logo {
@@ -129,16 +129,23 @@ hr {
 }
 
 .review {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: top;
+	display: grid;
+	grid-template-columns: 50% 1fr;
+	grid-template-rows: 1fr;
+	gap: 10px;
 }
 
 .review-img {
-	max-width: 50%;
-	height: auto;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
 	object-fit: cover;
+	width: 100%;
+	max-height: 100%;
+}
+
+.lead {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
 }
 
 .attribution {
