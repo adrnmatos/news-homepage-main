@@ -6,8 +6,11 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
 		<title>Frontend Mentor | News homepage</title>
-
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./styles-desktop.css" />
 	</head>
 	<body>
 		<main>
@@ -21,52 +24,51 @@
 					<li>Categories</li>
 				</ul>
 			</nav>
-
 			<div class="container">
-				<img src="./assets/images/image-web-3-desktop.jpg" alt="web 3.0 image" class="logo" />
-				<div class="title">The Bright Future of Web 3.0?</div>
+				<img alt="web 3.0 image" id="logo" />
+				<div id="title">The Bright Future of Web 3.0?</div>
 				<div class="advertising">
 					<p class="description">
 						We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
 						of the people. But is it really fulfilling its promise?
 					</p>
-					<button>Read more</button>
+					<button id="readmore-button">Read more</button>
 				</div>
 				<div class="news">
 					<p class="news-title">New</p>
-					<p class="subtitle">Hydrogen VS Electric Cars</p>
-					<p class="description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+					<p class="news-subtitle">Hydrogen VS Electric Cars</p>
+					<p class="news-description">Will hydrogen-fueled cars ever catch up to EVs?</p>
 					<hr />
-					<p class="subtitle">The Downsides of AI Artistry</p>
-					<p class="description">What are the possible adverse effects of on-demand AI image generation?</p>
+					<p class="news-subtitle">The Downsides of AI Artistry</p>
+					<p class="news-description">What are the possible adverse effects of on-demand AI image generation?</p>
 					<hr />
-					<p class="subtitle">Is VC Funding Drying Up?</p>
-					<p class="description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+					<p class="news-subtitle">Is VC Funding Drying Up?</p>
+					<p class="news-description">
+						Private funding by VC firms is down 50% YOY. We take a look at what that means.
+					</p>
 				</div>
-				<div class="reviews">
-					<div class="review">
-						<img src="./assets/images/image-retro-pcs.jpg" alt="retro pcs" class="review-img" />
-						<div class="lead">
-							<p class="review-title">01</p>
-							<p class="subtitle">Reviving Retro PCs</p>
-							<p class="descriptoin">What happens when old PCs are given modern upgrades?</p>
-						</div>
+				<div class="review" id="review1">
+					<img src="./assets/images/image-retro-pcs.jpg" alt="retro pcs" class="review-img" />
+					<div class="lead">
+						<p class="review-title">01</p>
+						<p class="review-subtitle">Reviving Retro PCs</p>
+						<p class="review-description">What happens when old PCs are given modern upgrades?</p>
 					</div>
-					<div class="review">
-						<img src="./assets/images/image-top-laptops.jpg" alt="top laptops" class="review-img" />
-						<div class="lead">
-							<p class="review-title">02</p>
-							<p class="subtitle">Top 10 Laptops of 2022</p>
-							<p class="description">Our best picks for various needs and budgets.</p>
-						</div>
+				</div>
+				<div class="review" id="review2">
+					<img src="./assets/images/image-top-laptops.jpg" alt="top laptops" class="review-img" />
+					<div class="lead">
+						<p class="review-title">02</p>
+						<p class="review-subtitle">Top 10 Laptops of 2022</p>
+						<p class="review-description">Our best picks for various needs and budgets.</p>
 					</div>
-					<div class="review">
-						<img src="./assets/images/image-gaming-growth.jpg" alt="gamming growth" class="review-img" />
-						<div class="lead">
-							<p class="review-title">03</p>
-							<p class="subtitle">The Growth of Gaming</p>
-							<p class="description">How the pandemic has sparked fresh opportunities.</p>
-						</div>
+				</div>
+				<div class="review" id="review3">
+					<img src="./assets/images/image-gaming-growth.jpg" alt="gamming growth" class="review-img" />
+					<div class="lead">
+						<p class="review-title">03</p>
+						<p class="review-subtitle">The Growth of Gaming</p>
+						<p class="review-description">How the pandemic has sparked fresh opportunities.</p>
 					</div>
 				</div>
 			</div>
