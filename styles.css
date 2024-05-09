@@ -26,7 +26,6 @@ body {
 	font-weight: 400;
 	background-color: var(--paper);
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
@@ -44,16 +43,30 @@ header {
 	margin-bottom: 30px;
 }
 
-nav > ul {
+i {
+	color: black;
+	font-size: 50px;;
+}
+
+#navBar {
+	display: none;
+}
+
+ul {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
 
-nav > ul > li {
+li {
 	display: inline;
 	color: var(--grayish-blue);
 	font-weight: 400;
+}
+
+nav > ul > li:hover {
+	color: var(--soft-red);
 }
 
 main {
@@ -94,6 +107,11 @@ main {
 	letter-spacing: 3px;
 }
 
+#readmore-button:hover {
+	background-color: black;
+	border-color: black;
+}
+
 .news {
 	background-color: var(--very-dark-blue);
 	padding: 20px;
@@ -114,6 +132,10 @@ main {
 	margin-bottom: 20px;
 }
 
+.news-subtitle:hover {
+	color: var(--soft-orange);
+}
+
 .news-description {
 	line-height: 1.5;
 	color: var(--grayish-blue);
@@ -129,7 +151,7 @@ hr {
 .review {
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-start;
 	margin-bottom: 20px;
 }
 
@@ -142,9 +164,9 @@ hr {
 }
 
 .review-title {
-	color: var(--grayish-blue);
 	font-size: 32px;
 	font-weight: 800;
+	color: var(--grayish-blue);
 	margin-bottom: 10px;
 }
 
@@ -152,6 +174,10 @@ hr {
 	font-size: 18px;
 	font-weight: 800;
 	margin-bottom: 10px;
+}
+
+.review-subtitle:hover {
+	color: var(--soft-red);
 }
 
 .review-description {
@@ -162,3 +188,10 @@ footer {
 	display: none;
 }
 
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
