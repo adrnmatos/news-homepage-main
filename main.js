@@ -1,14 +1,15 @@
 const navBar = document.getElementById("navBar");
 
-let isOpen = false;
+let isMenuOpen = false;
+
 let ChangeIcon = function(icon) {
-  if(!isOpen) {
+  if(!isMenuOpen) {
     icon.classList.toggle("fa-xmark");
-    navBar.style.display = "block";
-    isOpen = true;
+    navBar.classList.toggle('active');
+    isMenuOpen = true;
   } else {
     icon.classList.toggle("fa-xmark");
-    navBar.style.display = "none";
-    isOpen = false;
+    navBar.classList.toggle('active');
+    isMenuOpen = false;
   }
 }

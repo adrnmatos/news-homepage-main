@@ -52,6 +52,16 @@ i {
 	display: none;
 }
 
+#navBar.active{
+	display: block;
+	position: absolute;
+	top: 10%;
+	background: #fff;
+	width: 70%;
+	height: 100%;
+	right: 0;
+}
+
 ul {
 	display: flex;
 	flex-direction: column;

@@ -9,7 +9,9 @@
 	}
 
 	#navBar {
-		display: block;
+		/* display: flex;
+		justify-content: space-around;
+		align-items: center; */
 		width: 35%;
 	}
 
